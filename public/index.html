@@ -10,28 +10,68 @@
     <title>Adoptme</title>
   </head>
   <body class="font-sg">
-    <header class="grid grid-cols-3 gap-4 items-center bg-amber-500 relative w-full h-24">
-      <figure class="flex items-center px-0 cursor-pointer absolute left-16 max-sm:left-6">
-        <figcaption class="pr-1 text-[24px]">Adoptme</figcaption>
-        <img src="./img/logo.png" alt="logo" class="w-6" />
-      </figure>
-      <nav class="absolute left-56 max-[1350px]:hidden">
-        <ul class="flex">
-          <li class="mx-14"><a href="#">Home</a></li>
-          <li class="mx-14"><a href="#">Adoption</a></li>
-          <li class="mx-14"><a href="#">Community</a></li>
-          <li class="mx-14"><a href="#">Stories with Pet</a></li>
-          <li class="mx-14"><a href="#">FAQ</a></li>
+    <header class="bg-gradient-to-t from-[#f2f8ff] via-[#ffffff] to-[#e6f2ff] h-[38rem] px-[70px] max-md:px-[50px] max-sm:px-[30px]">
+      <nav class="grid items-center relative w-full h-24">
+        <figure class="flex items-center px-0 cursor-pointer">
+          <figcaption class="pr-1 text-[24px]">Adoptme</figcaption>
+          <img src="./img/logo.png" alt="logo" class="w-6 mb-2" />
+        </figure>
+        <ul id="menu-bar" class="flex absolute left-56 max-xl:bg-zinc-700 max-xl:top-20 max-xl: max-xl:left-0 max-xl:right-1 max-xl:hidden max-xl:rounded-lg max-xl:text-white">
+          <li class="mx-8 max-xl:text-center max-xl:py-2 max-xl:pt-5 hover:text-sky-400"><a href="#">Home</a></li>
+          <li class="mx-8 max-xl:text-center max-xl:py-2 hover:text-sky-400"><a href="#">Adoption</a></li>
+          <li class="mx-8 max-xl:text-center max-xl:py-2 hover:text-sky-400"><a href="#">Community</a></li>
+          <li class="mx-8 max-xl:text-center max-xl:py-2 hover:text-sky-400"><a href="#">Stories with Pet</a></li>
+          <li class="mx-8 max-xl:text-center max-xl:py-2 max-xl:pb-5 hover:text-sky-400"><a href="#">FAQ</a></li>
+          <li class="hidden max-xl:hidden max-sm:block max-sm:mx-5">
+            <svg class="bg-sky-400 hover:bg-sky-500 cursor-pointer rounded-lg" xmlns="http://www.w3.org/2000/svg" width="100%" height="28" viewBox="0 0 24 24">
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+            <div class="bg-sky-400 hover:bg-sky-500 mt-3 text-center rounded-lg py-[1.5px] cursor-pointer">
+              <button class="text-sm">Sign In</button>
+            </div>
+            <div class="bg-sky-400 hover:bg-sky-500 mt-3 text-center rounded-lg py-[1.5px] mb-6 cursor-pointer">
+              <button class="text-sm">Sign Up</button>
+            </div>
+          </li>
         </ul>
+        <form class="flex absolute right-0">
+          <section class="flex items-center max-sm:hidden">
+            <svg class="cursor-pointer hover:text-sky-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+            <button class="mx-7 hover:text-sky-400">Sign In</button>
+            <button class="hover:text-sky-400">Sign Up</button>
+          </section>
+          <i id="toggle" class="bx bx-menu text-[34px] min-[1400px]:hidden ms-7 cursor-pointer hover:text-sky-400"></i>
+        </form>
       </nav>
-      <form class="flex absolute right-16 max-sm:right-6">
-        <section class="flex items-center max-sm:hidden">
-          <img src="./img/cil_search.png" alt="search" class="w-5" />
-          <button class="mx-7">Sign In</button>
-          <button>Sign Up</button>
+      <section class="flex">
+        <section class="mt-24">
+          <h1 class="text-5xl">
+            Let's Choose and <span><img class="inline w-10 mb-8" src="./img/logo.png" alt="logo" /></span> Adopt your New Pet
+          </h1>
+          <p>Adopt a pet, give them the best treatment, and you will feel really happy of friendship with your pet.</p>
         </section>
-        <i class="bx bx-menu text-[34px] min-[1350px]:hidden ms-7 "></i>
-      </form>
+        <section>
+          <figure>
+            <img src="./img/cat-1.png" alt="cat" />
+            <img src="./img/dog-1.png" alt="cat" />
+            <img src="./img/dog-2.png" alt="cat" />
+            <img src="./img/cat-2.png" alt="cat" />
+          </figure>
+        </section>
+      </section>
     </header>
+    <script src="./js/script.js"></script>
   </body>
 </html>
