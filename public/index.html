@@ -10,13 +10,13 @@
     <title>Adoptme</title>
   </head>
   <body class="font-sg">
-    <header class="bg-gradient-to-t from-[#f2f8ff] via-[#ffffff] to-[#e6f2ff] h-[38rem] px-[70px] max-md:px-[50px] max-sm:px-[30px]">
+    <header class="bg-gradient-to-t from-[#f2f8ff] via-[#ffffff] to-[#e6f2ff] h-[50rem] px-[70px] max-md:px-[50px] max-sm:px-[30px]">
       <nav class="grid items-center relative w-full h-24">
         <figure class="flex items-center px-0 cursor-pointer">
-          <figcaption class="pr-1 text-[24px]">Adoptme</figcaption>
-          <img src="./img/logo.png" alt="logo" class="w-6 mb-2" />
+          <figcaption class="pr-1 text-[24px] text-gray-700">Adoptme</figcaption>
+          <img src="./img/logo.svg" alt="logo" class="w-6 mb-2" />
         </figure>
-        <ul id="menu-bar" class="flex absolute left-56 max-xl:bg-zinc-700 max-xl:top-20 max-xl: max-xl:left-0 max-xl:right-1 max-xl:hidden max-xl:rounded-lg max-xl:text-white">
+        <ul id="menu-bar" class="flex absolute z-10 left-56 max-xl:bg-zinc-700 max-xl:top-20 max-xl: max-xl:left-0 max-xl:right-1 max-xl:hidden max-xl:rounded-lg max-xl:text-white text-gray-700">
           <li class="mx-8 max-xl:text-center max-xl:py-2 max-xl:pt-5 hover:text-sky-400"><a href="#">Home</a></li>
           <li class="mx-8 max-xl:text-center max-xl:py-2 hover:text-sky-400"><a href="#">Adoption</a></li>
           <li class="mx-8 max-xl:text-center max-xl:py-2 hover:text-sky-400"><a href="#">Community</a></li>
@@ -43,33 +43,48 @@
         </ul>
         <form class="flex absolute right-0">
           <section class="flex items-center max-sm:hidden">
-            <svg class="cursor-pointer hover:text-sky-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg class="cursor-pointer hover:text-sky-400 text-gray-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
               />
             </svg>
-            <button class="mx-7 hover:text-sky-400">Sign In</button>
-            <button class="hover:text-sky-400">Sign Up</button>
+            <button class="mx-7 hover:text-sky-400 text-gray-700">Sign In</button>
+            <button class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-1 rounded">Sign Up</button>
           </section>
-          <i id="toggle" class="bx bx-menu text-[34px] min-[1400px]:hidden ms-7 cursor-pointer hover:text-sky-400"></i>
+          <i id="toggle" class="bx bx-menu text-[34px] min-[1280px]:hidden ms-7 cursor-pointer hover:text-sky-400"></i>
         </form>
       </nav>
-      <section class="flex">
-        <section class="mt-24">
-          <h1 class="text-5xl">
-            Let's Choose and <span><img class="inline w-10 mb-8" src="./img/logo.png" alt="logo" /></span> Adopt your New Pet
+      <section class="flex mt-24">
+        <section class="w-ful">
+          <h1 class="text-[54px] text-gray-700 max-xl:text-[48px] max-lg:text-[36px] max-md:text-[30px] max-sm:text-[24px]">
+            Let's Choose and <span><img class="inline w-10 mb-8" src="./img/logo.svg" alt="logo" /></span> Adopt your New Pet
           </h1>
-          <p>Adopt a pet, give them the best treatment, and you will feel really happy of friendship with your pet.</p>
-        </section>
-        <section>
-          <figure>
-            <img src="./img/cat-1.png" alt="cat" />
-            <img src="./img/dog-1.png" alt="cat" />
-            <img src="./img/dog-2.png" alt="cat" />
-            <img src="./img/cat-2.png" alt="cat" />
+          <p class="text-[20px] mt-6 w-[70%] text-zinc-400 max-xl:text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[12px] max-sm:w-[100%]">
+            Adopt a pet, give them the best treatment, and you will feel really happy of friendship with your pet.
+          </p>
+          <section class="mt-10 text-[24px] w-full">
+            <button class="bg-gray-700 text-white px-7 py-2 rounded mr-14 hover:bg-gray-800">Adopt Me</button>
+            <button class="text-gray-700">Donate for Food</button>
+          </section>
+          <h3 class="mt-10 text-[16px] text-gray-700">SUPPORTED BY:</h3>
+          <figure class="flex gap-8 mt-4 ml-2">
+            <img src="./img/sb-1.svg" alt="supported logo" />
+            <img src="./img/sb-2.svg" alt="supported logo" />
+            <img src="./img/sb-3.svg" alt="supported logo" />
+            <img src="./img/sb-4.svg" alt="supported logo" />
           </figure>
         </section>
+        <figure class="w-full flex items-center justify-end">
+          <img src="./img/cat-1.png" alt="cat" class="w-3/5 max-xl:w-[75%] max-lg:w-[100%] max-md:w-[100%] max-sm:w-[100%] rounded-lg" />
+
+          <!-- <figure class="flex w-[95%] items-center justify-center"> -->
+          <!-- <img src="./img/cat-1.png" alt="cat" class="w-[70%] rounded-lg" /> -->
+          <!-- <img src="./img/dog-1.png" alt="cat" class="w-[55%] rounded-lg relative bottom-10" /> -->
+          <!-- <img src="./img/dog-2.png" alt="cat" class="w-[40%] rounded-lg relative top-6 ml-[10%]" /> -->
+          <!-- <img src="./img/cat-2.png" alt="cat" class="w-[45%] h-1/5 rounded-lg relative bottom-4 ml-[5%]" /> -->
+          <!-- </figure> -->
+        </figure>
       </section>
     </header>
     <script src="./js/script.js"></script>
